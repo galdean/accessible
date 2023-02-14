@@ -36,24 +36,30 @@
 <h2 id="signup">Sign Up!</h2>
 <form id="sign-up-form">
 
-<p>
-  <span id="name">Name:</span>  <input name="fn" type="text" size="10" id="fn"> <input name="mi" type="text" size="1" id="mi">. <input name="ln" type="text" size="10" id="ln"><br>
-</p>
-<p>
-  <span id="email">Email:</span> <input id="em" name="em" type="text" size="20">
-</p>
-<p>
-  <span id="spamtext">Would you like to receive occassional emails with offers from us?</span>
-  <div id="receivespambutton">
-    <img src="pics/checked.png" alt="checkbox">
-  </div>
-  <input type="hidden" name="spamyn" id="spamyn" value="n">
-</p>
-<p>
-  Comments:<br>
-  <textarea rows="5" cols="40"></textarea>
-</p>
- <input type="button" value="Sign Up!" id="signupbutton">
+  <label for="first name">First name:</label>
+  <input name="first name" placeholder="John" type="text" size="10" id="fn"> 
+  
+  <label for="middle initial">Middle Initial:</label>
+  <input name="middle initial" placeholder="B" type="text" size="1" id="mi">.
+ 
+  <label for="last name">Last Name:</label>
+  <input placeholder="Smith" name="last name" type="text" size="10" id="ln">
+  <br><br>
+  <label for="email">Email:</label>
+  <input name="email" placeholder="example@gmail.com" type="email" size="10" id="email">
+
+  <p>
+    <span id="spamtext">Would you like to receive occassional emails with offers from us?</span>
+    <div id="receivespambutton">
+      <img src="pics/checked.png" alt="checkbox you can click to recieve spam or not">
+    </div>
+    <input type="hidden" name="spamyn" id="spamyn" value="n">
+  </p>
+  <p>
+    Comments:<br>
+    <textarea rows="5" cols="40"></textarea>
+  </p>
+  <input type="button" value="Sign Up!" id="signupbutton">
 </form>
 
 </div><!-- end div.container -->
