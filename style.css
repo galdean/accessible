@@ -32,9 +32,9 @@ input,textarea {
 }
 
 #accessibilitybanner {
+  background-color: rgb(17, 138, 178);
   width: 857px;
   height: 207px;
-  background-color: lightblue;
   text-align: center;
   padding-top: 70px;
 }
