@@ -31,18 +31,20 @@ input,textarea {
   color: red;
 }
 
-#accessibilitybanner {
-  background-color: rgb(17, 138, 178);
+
+#accessibilitybanner{
   width: 857px;
-  height: 207px;
+  height: 187px;
   text-align: center;
   padding-top: 70px;
+  
+  background-color: rgb(90, 153, 173);
 }
-ul{
+li{
   list-style-image: url("pics/dot.png");
 }
 
-nav:focus-within, iframe:focus-visible {
+nav:focus-within, iframe:focus-visible, h1:focus-visible {
   outline: 4px solid crimson;
   border-radius: 3px;
 }
