@@ -17,9 +17,12 @@ $(document).ready(function() {
 
     if($($("#videoplayer").children()[0]).attr("src")=="pics/play.png") {
       $($("#videoplayer").children()[0]).attr("src","pics/pause.jpg");
-      $("#thevideo")[0].play();
+      //adding alt text to show if box is checked or not
+      $($("#videoplayer").children()[0]).attr("alt","checkbox is checked. Click again to uncheck");
+      $("#thevideo")[0].attr("src","https://www.youtube.com/embed/LwiFuLa0r7c?cc_load_policy=1?autoplay=1");;
     } else {
       $($("#videoplayer").children()[0]).attr("src","pics/play.png");
+      $($("#videoplayer").children()[0]).attr("alt","checkbox is unchecked. Click again to check")
       $("#thevideo")[0].pause();
     }
   });
