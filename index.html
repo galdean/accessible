@@ -10,29 +10,31 @@
 <body>
 <div class="offscreen"></div>
 <div class="container">
-<div class="navigation">
+<nav class="navigation">
   <a href="#home"><img src="pics/home.png" alt="home nav"></a><a href="#links"><img src="pics/links.png" alt="links nav"></a> <a href="#signup"><img src="pics/signup.png" alt="signup nav"></a>
-</div>
+</nav>
 
-<div id="accessibilitybanner"><h1 id="home">Accessibility Overview</h1></div>
+<banner id="accessibilitybanner"><h1 id="home">Accessibility Overview</h1></banner>
+<main>
+  <video width="480" height="360" id="thevideo">
+    <source src="employment-movie.mp4" type="video/mp4">
+  </video>
+  <div id="videoplayer">
+    <img width="50px" height="50px" src="pics/play.png" alt="Play button for embedded video">
+  </div>
+  
+  <div class="links">
+    <h2 id="links">Links</h2>
+    <ul>
+      <li><a href="https://www.barnardhci.com">Accessibility Research at Hamilton</a></li>
+      <li><a href="https://www.hamilton.edu/offices/dos/accessibility">Disability Services at Hamilton</a></li>
+      <li><a href="https://xkcd.com/">XKCD</a></li>
+      <li><a href="https://www.youtube.com/watch?v=HtTyRajRuyY">A11ycasts Videos</a></li>
+    </ul>
+  </div>
+</main>
 
-<video width="480" height="360" id="thevideo">
-  <source src="employment-movie.mp4" type="video/mp4">
-</video>
-<div id="videoplayer" tabindex="5">
-  <img width="50px" height="50px" src="pics/play.png" alt="Play button for embedded video">
-</div>
-
-<div class="links">
-  <h2 id="links">Links</h2>
-  <ul>
-    <li><a href="https://www.barnardhci.com">Accessibility Research at Hamilton</a></li>
-    <li><a href="https://www.hamilton.edu/offices/dos/accessibility">Disability Services at Hamilton</a></li>
-    <li><a href="https://xkcd.com/">XKCD</a></li>
-    <li><a href="https://www.youtube.com/watch?v=HtTyRajRuyY">A11ycasts Videos</a></li>
-  </ul>
-</div>
-
+<section role="Sign_up">
 <h2 id="signup">Sign Up!</h2>
 <form id="sign-up-form">
 
@@ -64,7 +66,8 @@
 
   <input type="button" value="Sign Up!" id="signupbutton">
 </form>
-
+  
+</section>
 </div><!-- end div.container -->
 </body>
 </html>
