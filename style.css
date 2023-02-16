@@ -41,3 +41,16 @@ input,textarea {
 ul{
   list-style-image: url("pics/dot.png");
 }
+
+nav:focus-within, iframe:focus-visible {
+  outline: 4px solid crimson;
+  border-radius: 3px;
+}
+*:focus-visible, *:focus {
+  outline: 4px solid crimson;
+  border-radius: 3px;
+}
+input:focus-visible {
+  outline: 4px solid crimson;
+  border-radius: 3px;
+}
