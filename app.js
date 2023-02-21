@@ -31,6 +31,7 @@ $(document).ready(function() {
   $("#signupbutton").click(function() {
     if($("#fn").val()=="" || $("#mi").val()=="" || $("#ln").val()=="") {
       $("#name").addClass("error");
+      alert("Hey, you didn't add your name");
 
       return;
     } else {
@@ -39,6 +40,7 @@ $(document).ready(function() {
 
     if($("#em").val()=="") {
       $("#email").addClass("error");
+      alert("Hey, you didn't add your email");
 
       return;
     } else {
